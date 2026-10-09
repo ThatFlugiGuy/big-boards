@@ -27,8 +27,16 @@ public class TheMixThatSteals {
         // binding the saac
         if (sender.getMainHandStack().getItem() instanceof WhiteboardItem && WHOAMI) {
             sender.getMainHandStack().set(ModDataComponentTypes.WHITEBOARD_TEXT, message.getContent().getLiteralString());
-            ci.cancel();
+            //ci.cancel();
         }
+
+        for (ServerPlayerEntity plyr : sender.getEntityWorld().getPlayers()) {
+            if (Objects.equals(plyr.getName().getString(), params.name().getString()) && plyr.getMainHandStack().getItem() instanceof WhiteboardItem) {
+                ci.cancel();
+            }
+        }
+
+
     }
 
 

@@ -1,9 +1,11 @@
 package net.flugi.whiteboards.item;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.flugi.whiteboards.BigBoards;
 import net.flugi.whiteboards.component.ModDataComponentTypes;
 import net.flugi.whiteboards.item.custom.WhiteboardItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -24,6 +26,9 @@ public class ModItems {
 
 
 
-    public static void init() {}
+    public static void init() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add((ModItems.WHITEBOARD)));
+    }
 
 }
