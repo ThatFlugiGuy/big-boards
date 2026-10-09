@@ -1,0 +1,51 @@
+{
+	"format_version": "1.21.6",
+	"credit": "made by flugi",
+	"elements": [
+		{
+			"from": [0, 0, 7.5],
+			"to": [16, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 8]},
+			"color": 0,
+			"faces": {
+				"north": {"uv": [-4, 3, 12, 19], "texture": "#missing"},
+				"east": {"uv": [-5, 3, -4, 19], "texture": "#missing"},
+				"south": {"uv": [13, 3, 29, 19], "texture": "#missing"},
+				"west": {"uv": [12, 3, 13, 19], "texture": "#missing"},
+				"up": {"uv": [12, 3, -4, 2], "texture": "#missing"},
+				"down": {"uv": [28, 2, 12, 3], "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 20, -30],
+			"translation": [-9.5, 0.3, 5.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, 20, -30],
+			"translation": [-9.5, 0.3, 5.25]
+		},
+		"firstperson_righthand": {
+			"translation": [3.5, -4.5, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [3.5, -4.5, 0]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [5, 150, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"translation": [0, -0.75, -6]
+		},
+		"fixed": {
+			"translation": [0, 0, -0.25],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

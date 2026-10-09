@@ -1,0 +1,21 @@
+
+
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:special",
+        "model": {
+          "type": "big-boards:test",
+          "texture": "big-boards:item/whiteboard"
+        },
+        "base": "big-boards:item/whiteboard"
+      },
+      {
+        "type": "minecraft:model",
+        "model": "big-boards:item/whiteboard"
+      }
+    ]
+  }
+}

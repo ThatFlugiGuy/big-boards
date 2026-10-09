@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "net.flugi.whiteboards.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DoIReallyHaveToMakeDifferentMixinsForEachThingIWantToMixInto",
+    "TheMixThatHold",
+    "TheMixThatSteals"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "TheMixThatHides"
+  ]
+}

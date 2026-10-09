@@ -1,0 +1,10 @@
+{
+  "write": {
+    "subtitle": "sound.big-boards.write",
+    "sounds": ["big-boards:write_1","big-boards:write_2","big-boards:write_3","big-boards:write_4","big-boards:write_5"]
+  },
+  "erase": {
+    "subtitle": "sound.big-boards.erase",
+    "sounds": ["big-boards:write_1","big-boards:write_2","big-boards:write_5"]
+  }
+}
