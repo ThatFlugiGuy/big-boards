@@ -73,7 +73,15 @@ public abstract class TheMixThatHold<T extends BipedEntityRenderState> {
             cancellable = true
     )
     protected void setAngles(T state, CallbackInfo ci) {
-        if ( state.getMainHandItemStack().getItem() instanceof WhiteboardItem) {
+        Arm OFFARM = switch (state.mainArm) {
+            case LEFT -> Arm.RIGHT;
+            case RIGHT -> Arm.LEFT;
+        };
+
+        ItemStack heldStack = state.getMainHandItemStack();
+        ItemStack offStack = state.getItemStackForArm(OFFARM);
+
+        if ( heldStack.getItem() instanceof WhiteboardItem || offStack.getItem() instanceof WhiteboardItem ) {
             ci.cancel();
         }
     }
